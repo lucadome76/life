@@ -4,3 +4,31 @@
 /Users/sorokindmitrij/Projects/EbaloNanol/EbaloNanol/obj/x86/Debug/EbaloNanol.exe
 /Users/sorokindmitrij/Projects/EbaloNanol/EbaloNanol/obj/x86/Debug/EbaloNanol.pdb
 /Users/sorokindmitrij/Projects/EbaloNanol/EbaloNanol/obj/x86/Debug/LifeNameSpace.csprojResolveAssemblyReference.cache
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\Tipalol-Life\EbaloNanol\bin\Debug\EbaloNanol.exe
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\Tipalol-Life\EbaloNanol\bin\Debug\EbaloNanol.pdb
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\Tipalol-Life\EbaloNanol\obj\x86\Debug\LifeNameSpace.csprojAssemblyReference.cache
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\Tipalol-Life\EbaloNanol\obj\x86\Debug\LifeNameSpace.csproj.CoreCompileInputs.cache
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\Tipalol-Life\EbaloNanol\obj\x86\Debug\EbaloNanol.exe
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\Tipalol-Life\EbaloNanol\obj\x86\Debug\EbaloNanol.pdb
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\Tipalol-Life\EbaloNanol\obj\x86\Debug\LifeNameSpace.csproj.GenerateResource.cache
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\Tipalol-Life\EbaloNanol\obj\x86\Debug\LifeNameSpace.Properties.Resources.resources
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\Tipalol-Life\EbaloNanol\bin\Debug\en-US\EbaloNanol.resources.dll
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\Tipalol-Life\EbaloNanol\bin\Debug\it-IT\EbaloNanol.resources.dll
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\Tipalol-Life\EbaloNanol\obj\x86\Debug\LifeNameSpace.Properties.Resources.en-US.resources
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\Tipalol-Life\EbaloNanol\obj\x86\Debug\LifeNameSpace.Properties.Resources.it-IT.resources
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\Tipalol-Life\EbaloNanol\obj\x86\Debug\en-US\EbaloNanol.resources.dll
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\Tipalol-Life\EbaloNanol\obj\x86\Debug\it-IT\EbaloNanol.resources.dll
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\lucadome76-life\EbaloNanol\bin\Debug\EbaloNanol.exe
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\lucadome76-life\EbaloNanol\bin\Debug\EbaloNanol.pdb
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\lucadome76-life\EbaloNanol\bin\Debug\en-US\EbaloNanol.resources.dll
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\lucadome76-life\EbaloNanol\bin\Debug\it-IT\EbaloNanol.resources.dll
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\lucadome76-life\EbaloNanol\obj\x86\Debug\LifeNameSpace.csprojAssemblyReference.cache
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\lucadome76-life\EbaloNanol\obj\x86\Debug\LifeNameSpace.Properties.Resources.resources
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\lucadome76-life\EbaloNanol\obj\x86\Debug\LifeNameSpace.Properties.Resources.en-US.resources
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\lucadome76-life\EbaloNanol\obj\x86\Debug\LifeNameSpace.Properties.Resources.it-IT.resources
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\lucadome76-life\EbaloNanol\obj\x86\Debug\LifeNameSpace.csproj.GenerateResource.cache
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\lucadome76-life\EbaloNanol\obj\x86\Debug\LifeNameSpace.csproj.CoreCompileInputs.cache
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\lucadome76-life\EbaloNanol\obj\x86\Debug\en-US\EbaloNanol.resources.dll
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\lucadome76-life\EbaloNanol\obj\x86\Debug\it-IT\EbaloNanol.resources.dll
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\lucadome76-life\EbaloNanol\obj\x86\Debug\EbaloNanol.exe
+D:\Google Drive\Sviluppo Software\Visual Studio 2019\lucadome76-life\EbaloNanol\obj\x86\Debug\EbaloNanol.pdb

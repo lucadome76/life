@@ -20,8 +20,10 @@ namespace Life
         private string GenerateName(int len)
         {
             Random r = new Random(SecureRandom.Next());
-            string[] consonants = { "б", "в", "г", "д", "ж", "з", "к", "л", "м", "н", "п", "р", "с", "т", "й", "х", "ш" };
-            string[] vowels = { "а", "е", "и", "о", "у", "э", "я" };
+            string[] consonants = LifeNameSpace.Properties.Resources.Consonants.Split(new char[] { ',' }, StringSplitOptions.None);
+            //string[] consonants = { "б", "в", "г", "д", "ж", "з", "к", "л", "м", "н", "п", "р", "с", "т", "й", "х", "ш" };
+            string[] vowels = LifeNameSpace.Properties.Resources.Vowels.Split(new char[] { ',' }, StringSplitOptions.None);
+            //string[] vowels = { "а", "е", "и", "о", "у", "э", "я" };
             string Name = "";
             Name += consonants[r.Next(consonants.Length)].ToUpper();
             Name += vowels[r.Next(vowels.Length)];
@@ -71,22 +73,25 @@ namespace Life
 
             int deaths = 0;
             int newCommers = 0;
-            for (int i = 1; i < persons.Count-1; i++)
+            for (int i = 1; i < persons.Count - 1; i++)
             {
                 Random _random = new Random(SecureRandom.Next());
                 if (persons[i].isAlive())
                 {
+                    string t;
                     switch (_random.Next(0, 1000))
                     {
                         case 0:
-                            new Event(0, persons[i].getName() + " умирает :(").print();
+                            t = LifeNameSpace.Properties.Resources.Dying;
+                            new Event(0, persons[i].getName() + " " + t + " :(").print();
                             persons[i].Kill();
                             persons.Remove(persons[i]);
                             deaths++;
                             break;
                         case 1:
                             AddRandomPerson();
-                            new Event(2, persons[persons.Count - 1].getName() + " приезжает в город :)").print();
+                            t = LifeNameSpace.Properties.Resources.ComeToTown;
+                            new Event(2, persons[persons.Count - 1].getName() + " " + t + " :)").print();
                             newCommers++;
                             break;
                         case 2:
@@ -95,28 +100,38 @@ namespace Life
 
                             if (!persons[indexA].isMeet(indexA))
                             {
+                                t = LifeNameSpace.Properties.Resources.Meet;
                                 persons[indexA].AddMeeting(indexB, persons[indexB]);
                                 persons[indexB].AddMeeting(indexA, persons[indexA]);
-                                new Event(3, persons[indexA].getName() + " знакомится с " + persons[indexB].getName()).print();
+                                new Event(3, persons[indexA].getName() + " " + t + " " + persons[indexB].getName()).print();
                             }
 
                             break;
                     }
                     persons[i].Tick();
                 }
-                else { persons.Remove(persons[i]); deaths++; new Event(0, persons[i].getName() + " умирает :(").print(); }
+                else
+                {
+                    string t = LifeNameSpace.Properties.Resources.Dying;
+                    persons.Remove(persons[i]); deaths++; new Event(0, persons[i].getName() + " " + t + " :(").print();
+                }
             }
             Random random = new Random(SecureRandom.Next());
             for (int i = 0; i < random.Next(0, 100); i++)
             {
                 AddRandomPerson();
-                new Event(2, persons[persons.Count - 1].getName() + " приезжает в город :)").print();
+                string t = LifeNameSpace.Properties.Resources.ComeToTown;
+                new Event(2, persons[persons.Count - 1].getName() + " " + t + " :)").print();
                 newCommers++;
             }
-            Console.WriteLine("Год " + year);
-            Console.WriteLine("Население: " + persons.Count);
-            Console.WriteLine("Умерло: " + deaths);
-            Console.WriteLine("Приехало: " + newCommers);
+            string t1 = LifeNameSpace.Properties.Resources.Year;
+            Console.WriteLine(t1 + " " + year);
+            t1 = LifeNameSpace.Properties.Resources.Population;
+            Console.WriteLine(t1 + ": " + persons.Count);
+            t1 = LifeNameSpace.Properties.Resources.Deaths;
+            Console.WriteLine(t1 + ": " + deaths);
+            t1 = LifeNameSpace.Properties.Resources.Newcomers;
+            Console.WriteLine(t1 + ": " + newCommers);
             year++;
         }
         public Game(int mode)

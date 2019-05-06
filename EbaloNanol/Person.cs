@@ -40,24 +40,32 @@ namespace Life
         {
             this.alive = false;
         }
-        public void Tick() {
+        public void Tick()
+        {
             Random random = new Random(SecureRandom.Next());
-            for (int i = 0; i < random.Next(0, this.advMeetings.Count); i++) {
+            for (int i = 0; i < random.Next(0, this.advMeetings.Count); i++)
+            {
                 this.advMeetings[i].addRelation(random.Next(-20, 20));
-                if (this.advMeetings[i].getRelation() >= 50) {
-                    new Event(4, this.name + " и " + this.advMeetings[i].getPartner().name + " теперь друзья" ).print();
+                string t = LifeNameSpace.Properties.Resources.Conjunction;
+                if (this.advMeetings[i].getRelation() >= 50)
+                {
+                    string x = LifeNameSpace.Properties.Resources.Friends;
+                    new Event(4, this.name + " " + t + " " + this.advMeetings[i].getPartner().name + " " + x).print();
                 }
                 if (this.advMeetings[i].getRelation() >= 100)
                 {
-                    new Event(4, this.name + " и " + this.advMeetings[i].getPartner().name + " теперь лучшие друзья").print();
+                    string x = LifeNameSpace.Properties.Resources.BestFriends;
+                    new Event(4, this.name + " " + t + " " + this.advMeetings[i].getPartner().name + " " + x).print();
                 }
                 if (this.advMeetings[i].getRelation() <= -50)
                 {
-                    new Event(4, this.name + " и " + this.advMeetings[i].getPartner().name + " недолюбливают друг друга").print();
+                    string x = LifeNameSpace.Properties.Resources.Disobedient;
+                    new Event(4, this.name + " " + t + " " + this.advMeetings[i].getPartner().name + " " + x).print();
                 }
                 if (this.advMeetings[i].getRelation() <= -100)
                 {
-                    new Event(4, this.name + " и " + this.advMeetings[i].getPartner().name + " теперь враждуют").print();
+                    string x = LifeNameSpace.Properties.Resources.Enemies;
+                    new Event(4, this.name + " " + t + " " + this.advMeetings[i].getPartner().name + " " + x).print();
                 }
             }
         }
@@ -89,10 +97,14 @@ namespace Life
         public void debugInfo()
         {
             Console.WriteLine(this.name);
-            Console.WriteLine("Пол: " + this.gender);
-            Console.WriteLine("Возраст: " + this.age);
-            Console.WriteLine("Сбережения: " + this.money);
-            Console.WriteLine("Жив: " + this.alive);
+            string q = LifeNameSpace.Properties.Resources.Gender;
+            Console.WriteLine(q + ": " + this.gender);
+            q = LifeNameSpace.Properties.Resources.Age;
+            Console.WriteLine(q + ": " + this.age);
+            q = LifeNameSpace.Properties.Resources.Money;
+            Console.WriteLine(q + ": " + this.money);
+            q = LifeNameSpace.Properties.Resources.Alive;
+            Console.WriteLine(q + ": " + this.alive);
         }
         public Person() { }
         public Person(string name, int age, int money, bool alive = true)
